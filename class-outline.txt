@@ -1,0 +1,25 @@
+Week 1: Intro to Python
+- Day 1: Python Fundamentals
+    - Python Syntax
+    - Data Types
+    - Numbers
+    - Strings
+
+- Day 2: List Overview
+    - List Manipulation
+    - Built-In Functions for Lists
+    - Tuples
+    - Conditionals
+    - Loops
+    - Looping Over Lists & Strings
+    - Functions
+    - Default Parameters & Named Arguments
+    - Debugging
+
+- Day 2: Dictionaries
+    - Dictionary Manipulation
+    - Loops & Dictionaries
+    - Nested Dictionaries & Lists
+
+
+Week 2: Python OOP
