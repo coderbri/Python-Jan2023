@@ -8,12 +8,12 @@
 
 ### **Python Fundamentals**
 
-- **[D1: Python Syntax](Wk1-Fundamentals/Lecture-Code/D1-Python_Syntax)**
+- **[D1: Python Syntax](D1-Python_Syntax/)**
     - Data Types
     - Numbers
     - Strings
 
-- **[D2: Lists Manipulation](Wk1-Fundamentals/Lecture-Code/D2-List_Loops_Conditionals/)**
+- **[D2: Lists Manipulation](D2-List_Loops_Conditionals/)**
     - Built-in Functions for Lists
     - Tuples
     - Conditionals
@@ -22,7 +22,7 @@
     - Functions
     - Debugging
 
-- **D3: Dictionary Manipulation**
+- **[D3: Dictionary Manipulation](#)**
     - Loops & Dictionaries
     - Nested Dictionaries & Lists
     - Default Parameters & Named Arguments
