@@ -74,4 +74,4 @@ def this_length_that_value(size, value):
     - **Example 2:** `this_length_that_value(6, 2)` would return `[2, 2, 2, 2, 2, 2]`, a list of length 6 with all values as `2`.
 
 ---
-<p align="right">Completed: ２３年０９月２１日（木）</p>
+<p align="right">Completed: ２０２３年０９月２１日（木）</p>
