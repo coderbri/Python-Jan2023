@@ -36,7 +36,6 @@ class User:
             self.display_membership_status()
             print(f"-----------------------------\nThank you for enrolling, {self.first_name}.\nYou are now a member!")    
     
-    # Todo: spend_points(self, amount) - have this method decrease the user's points by the amount specified.
     def spend_points(self, amount_spent):
         print(f"\n====== SPENDING HISTORY ======")
         if not self.is_rewards_member:
@@ -47,7 +46,7 @@ class User:
             else:
                 self.gold_card_points -= amount_spent
                 print(f"Thank you, {self.first_name}. You've spent {amount_spent}pts.\nRemaining: {self.gold_card_points}pts.")
-        # Todo: Add logic in the spend points method to be sure they have enough points to spend that amount and handle appropriately.
+    
 
 # * TESTING GROUND
 user1 = User("Jane", "Doe", "jd@mail.com", 47)
