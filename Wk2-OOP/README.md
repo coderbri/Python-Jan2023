@@ -1,6 +1,6 @@
 # Week 2: Python OOP
 
-２０２３年０９月２８日（木）- ２０２３年０９月___日（_）
+２０２３年１０月０１日　- ２０２３年０月___日
 
 ---
 
@@ -16,10 +16,10 @@
     - Methods
         - Methods & Updating Attributes
 
-<!-- - **[D5: ---](#)**
+- **[D5: Static Methods & Class Association](Lecture-Code/D5-Static_Methods_and_Class_Association/)**
     - Class/Static Methods
     - Association Between Classes
-    - OOP & Dictionaries Practice -->
+    - OOP & Dictionaries Practice
 
 <!-- - **[D6: ---](#)**
     - Overview
