@@ -14,7 +14,7 @@ Course Taken: ２０２３年０１月
 - Python OOP
     - [#006: User](Wk2-OOP/006-User/)
     - [#007: Chaining Methods](Wk2-OOP/007-Chaining_Methods/)
-    - [#008: Bank Account](#)
+    - [#008: Bank Account](Wk2-OOP/008-BankAccount/)
     - [#008: Users & Bank Accounts](#)
 
 <!-- - MySQL: Queries & ERD -->
