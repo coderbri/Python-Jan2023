@@ -15,8 +15,18 @@ Course Taken: ２０２３年０１月
     - [#006: User](Wk2-OOP/006-User/)
     - [#007: Chaining Methods](Wk2-OOP/007-Chaining_Methods/)
     - [#008: Bank Account](Wk2-OOP/008-BankAccount/)
-    - [#008: Users & Bank Accounts](#)
+    - [#009: Users & Bank Accounts](Wk2-OOP/009-Users_with_BankAccounts/)
+    - [#010: Basketball Dictionaries](#)
+    - [#011: Modular Practice](#)
+    - [#012: Dojo Pets](#)
 
-<!-- - MySQL: Queries & ERD -->
-<!-- - Flask Framework -->
+- MySQL: Queries & ERD
+    - [#013: Users ERD](#)
+    - [#014: Dojos & Ninjas ERD](#)
+    - [#015: ...](#)
+
+- Flask Framework
+    - [#029: Understanding Routing](#)
+    - [#030: Playground](#)
+    - [#031: Checkerboard](#)
 <!-- - Flask + MySQL - Full-Stack -->
