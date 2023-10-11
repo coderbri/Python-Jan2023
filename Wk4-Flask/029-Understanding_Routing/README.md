@@ -34,11 +34,17 @@ This Flask application (`server.py`) is a simple web server that defines several
 - **Function**: `say_hi(name)`
 - **Description**: This route is dynamic and can accept any name as part of the URL. For example, if you access `http://localhost:5001/say/michael`, it will respond with "Hi Michael!".
 
-5. `/repeat/<repeated_num>/<phrase>` Route - Repeating a Phrase
+#### 5. `/repeat/<repeated_num>/<phrase>` Route - Repeating a Phrase
 
 - **URL**: `http://localhost:5001/repeat/{repeated_num}/{phrase}`
 - **Function**: `repeat_phrase(repeated_num, phrase)`
 - **Description**: This route takes two parameters: `repeated_num`, an integer, and `phrase`, a string. It responds by repeating the `phrase` the specified number of times. For example, `http://localhost:5001/repeat/3/hello` will display "hellohellohello".
+
+## 6. Handling Unspecified Routes
+
+- **URL**: Any route that is not explicitly specified in the defined routes
+- **Function**: `handle_undefined_route(undefined_route)`
+- **Description**: This catch-all route handles any unspecified routes. When a user accesses a route that hasn't been explicitly defined, they will receive the "Sorry! No response. Try again." error message.
 
 
 ## Running the Application
