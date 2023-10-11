@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --html-height: 100vh;
+    
+    --open-sans: "Open Sans", sans-serif;
+    
+    --neutral-black: #1D1A1A;
+    --color-white: #fff;
+    
+    /* Not used: */
+    /* --tertiary-red: #F2D8E2; */
+    /* --tertiary-green: #E2F2D8; */
+    /* --tertiary-blue: #D8E2F2; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--open-sans);
+}
+
+
+html {
+    background: linear-gradient(to top, #F2D8E2, #FFF);
+    height: var(--html-height);
+}
+
+/** HEADER - NAV BAR **/
+.header__nav {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    
+    background-color: var(--neutral-black);
+    color: var(--color-white);
+    
+    text-align: center;
+}
+
+/** BODY **/
+.container {
+    max-width: 1140px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 15px; /* Add padding to create space on both sides */
+}
+
+.message {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.message h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.message ol {
+    padding: 0 1rem;
+}
+li p {
+    color: rgb(83, 125, 201);
+    font-weight: 600;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+    margin: 0 5rem;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    
+    background-color: var(--tertiary-blue);
+    border: 4px solid var(--neutral-black);
+    border-radius: 10px;
+}
+
+.variable-data {
+    padding: 3rem 0;
+}

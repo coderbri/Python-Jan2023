@@ -34,7 +34,7 @@ Course Taken: ２０２３年０１月
 
 - Flask Framework
     - [#029: Understanding Routing](Wk4-Flask/029-Understanding_Routing/)
-    - [#030: Playground](#)
+    - [#030: Playground](Wk4-Flask/030-Playground/)
     - [#031: Checkerboard](#)
 
 <!-- - Flask + MySQL - Full-Stack -->

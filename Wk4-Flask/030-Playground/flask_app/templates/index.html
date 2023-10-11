@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>030 Playground</title>
+    
+    <!-- * Linking a CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <header>
+        <nav class="header__nav">
+            <h1>Welcome to Playground</h1>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+        {% if message %}
+        <div class="message">
+            <h3>{{ message }}</h3>
+            <h4>Example URL Format:</h4>
+            <ol>
+                {% for route in valid_routes %}
+                    <li><p>{{ route }}</p></li>
+                {% endfor %}
+            </ol>
+            <p><strong>Please see the README.md to see how the URL links are formatted for an accurate example.</strong></p>
+        </div>
+        
+        {% else %}
+        
+        <div class="flex-container">
+            {% for box in range(0, times): %}
+                <div class="box" style="background-color: {{ box_color }};"></div>
+            {% endfor %}
+        </div>
+        
+        <div class="variable-data">
+            <h3>Variables being called:</h3>
+            <p><strong>Box Color</strong>: {{ box_color }}</p>
+            <p><strong>Repeated Times</strong>: {{ times }}x</p>
+        </div>
+        
+        <script>
+            // Check if the content height is greater than the viewport height
+            if (document.body.scrollHeight > window.innerHeight) {
+                document.documentElement.style.setProperty('--html-height', 'fit-content');
+            } else {
+                document.documentElement.style.setProperty('--html-height', '100vh');
+            }
+        </script>
+        {% endif %}
+        
+    </div>
+</body>
+</html>
