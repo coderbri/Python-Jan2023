@@ -20,13 +20,21 @@ Course Taken: ２０２３年０１月
     - [#011: Modular Practice](#)
     - [#012: Dojo Pets](#)
 
-- MySQL: Queries & ERD
+- MySQL: ERD & Queries
     - [#013: Users ERD](#)
     - [#014: Dojos & Ninjas ERD](#)
-    - [#015: ...](#)
+    - [#015: Books ERD](#)
+    - [#016: Event Planner ERD](#)
+    - [#017: Blogs ERD](#)
+    - [#018: User Dashboard](#)
+    - [#019: Normalization](#)
+    ---
+    - [#020: Users Queries](#)
+    - [#021: ...](#)
 
 - Flask Framework
-    - [#029: Understanding Routing](#)
+    - [#029: Understanding Routing](Wk4-Flask/029-Understanding_Routing/)
     - [#030: Playground](#)
     - [#031: Checkerboard](#)
+
 <!-- - Flask + MySQL - Full-Stack -->
