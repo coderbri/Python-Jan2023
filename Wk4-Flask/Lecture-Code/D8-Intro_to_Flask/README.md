@@ -25,7 +25,7 @@
         return 'Hello World!'
     
     if __name__=='__main__':
-        app.run(debug=True)
+        app.run(debug=True, port=5001)
     ```
 
 2. Now run the following command:
@@ -47,3 +47,5 @@
     ```
     python3 server.py
     ```
+
+The app will run in debug mode on http://localhost:5000/. You can access the various routes to see how the content is dynamically rendered using Jinja2 templates.

@@ -14,30 +14,24 @@
 2. About this Project
 3. Running the Flask Application
 
-<details>
-<summary>Click to toggle contents of `code`</summary>
-
-```
-CODE!
-```
-</details>
+---
 
 <details>
-<summary>Buidling the Application
+<summary>Building the Application</summary>
 
-Inside the **project_folder**, create a file called **server.py**.
-    - this is where all of our routes will be set up to handle the requests.
-    - The following code is added into the **server.py**:
-    ```py
+1. Inside the **project_folder**, create a file called **server.py**.
+    - This is where all of our routes will be set up to handle the requests.
+
+    ```python
     from flask import Flask
     app = Flask(__name__)
-    
+
     @app.route('/')
     def hello_world():
         return 'Hello World!'
-    
-    if __name__=='__main__':
-        app.run(debug=True)
+
+    if __name__ == '__main__':
+        app.run(debug=True, port=5001)
     ```
 
 2. Now run the following command:
@@ -48,20 +42,11 @@ Inside the **project_folder**, create a file called **server.py**.
     ```
     python3 -m pipenv install flask
     ```
-    Two files will apper (Pipfile and Pipfile.lock). They're both needed to use the installed packages. Pipfile has the packages installed whereas Pipfile.lock has the specific details on what version is being used.
-
-3. Activate the Virtual Environment
-    ```
-    pipenv shell
-    ```
-</summary>
+    Two files will appear (Pipfile and Pipfile.lock). They're both needed to use the installed packages. Pipfile has the packages installed, whereas Pipfile.lock has the specific details on what version is being used.
 </details>
 
----
 
-## Today's Code
-
-# Flask Web Application - Rendering with Jinja2
+## Flask Web Application - Rendering with Jinja2
 
 This Flask web application demonstrates how to use Jinja2 templates to render dynamic content. The app defines several routes, each showcasing different features and uses of Jinja2 for rendering HTML templates.
 
@@ -109,3 +94,14 @@ The application uses Jinja2 templates to render HTML with dynamic content. Here'
 
 3. `student_list.html`: This template demonstrates how to loop through a list of student information and display it on the webpage.
 
+## Running the Application
+
+Activate the Virtual Environment
+    ```
+    pipenv shell
+    ```
+    And start the server:
+    ```
+    python3 server.py
+    ```
+The app will run in debug mode on http://localhost:5001/. You can access the various routes to see how the content is dynamically rendered using Jinja2 templates.
