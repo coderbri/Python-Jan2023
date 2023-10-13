@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D9 Rendering with Jinja</title>
+</head>
+<body>
+    <h1>Rendering Templates with Jinja</h1>
+    
+    <h3>Student Roster</h3>
+    
+    {% for student in student_info: %}
+        <p>Name: <strong>{{ student['name'] }}</strong> - Age: <strong>{{ student['age'] }}yo</strong></p>
+    {% endfor %}
+    
+</body>
+</html>
