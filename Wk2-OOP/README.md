@@ -1,6 +1,6 @@
 # Week 2: Python OOP
 
-２０２３年１０月０１日　- ２０２３年０月___日
+２０２３年１０月０１日　- ２０２３年１０月０６日
 
 ---
 
@@ -20,14 +20,3 @@
     - Class/Static Methods
     - Association Between Classes
     - OOP & Dictionaries Practice
-
-<!-- - **[D6: ---](#)**
-    - Overview
-    - Coding Dojo's Graphic Organizer
-    - Database Design
-    - One to One
-    - One to Many
-    - Many to Many
-    - Normalization
-    - Conventions
-    - Data Types -->
