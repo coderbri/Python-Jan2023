@@ -42,3 +42,8 @@
     ```
     pipenv shell
     ```
+    
+    And start the server:
+    ```
+    python3 server.py
+    ```
