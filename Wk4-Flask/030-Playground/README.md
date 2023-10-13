@@ -20,11 +20,19 @@ The Flask application (`server.py`) defines several routes, each serving a speci
 
 #### 2. "`/play`" Route - Display Blue Boxes
 
+<div align="center">
+<img src="./imgs/Playground-LevelOne-Demo.png" width="450px" height="auto">
+</div>
+
 - **URL**: `/play`
 - **Function**: `lvl_one()`
 - **Description**: This route renders a template with three blue boxes. The `box_color` is set to "#D8E2F2," and it repeats three times.
 
 #### 3. "`/play/<int:x>`" Route - Display Custom Number of Blue Boxes
+
+<div align="center">
+<img src="./imgs/Playground-LevelTwo-Demo.gif" width="450px" height="auto">
+</div>
 
 - **URL**: `/play/<int:x>`
 - **Function**: `lvl_two(x)`
@@ -32,11 +40,19 @@ The Flask application (`server.py`) defines several routes, each serving a speci
 
 #### 4. "`/play/<int:x>/<color>`" Route - Display Custom Number of Colored Boxes
 
+<div align="center">
+<img src="./imgs/Playground-LevelThree-Demo.gif" width="450px" height="auto">
+</div>
+
 - **URL**: `/play/<int:x>/<color>`
 - **Function**: `lvl_three(x, color)`
 - **Description**: You can customize the number of boxes and their color. This route renders a template with a specified number of boxes (`x`) with the background color set to the provided value (`color`).
 
 #### 5. Handling Undefined Routes
+
+<div align="center">
+<img src="./imgs/Playground-UndefinedPath-Demo.gif" width="450px" height="auto">
+</div>
 
 If you enter an invalid route, the application will display an error message and provide a list of valid route formats. For example, if you enter `http://localhost:5001/pla`, you will see the message:
 
