@@ -60,7 +60,7 @@ This Flask application allows you to generate custom checkerboards with differen
 Activate the Virtual Environment pipenv shell And start the server: python3 server.py The app will run in debug mode on http://localhost:5001/. You can access the various routes to see how the content is dynamically rendered using Jinja2 templates.
 
 **NOTES:**
-- To see how this Flask application was initially set up, [check this project](#).
+- To see how this Flask application was initially set up, [check this project](https://github.com/coderbri/Python-Jan2023/blob/main/Wk4-Flask/Lecture-Code/D9-Templates_Jinja_and_Static_Files/README.md#initial-setup).
 - For more information on screen-height adjustment, [check this project](https://github.com/coderbri/Python-Jan2023/blob/main/Wk4-Flask/030-Playground/README.md#screen-height-adjustment).
 
 
