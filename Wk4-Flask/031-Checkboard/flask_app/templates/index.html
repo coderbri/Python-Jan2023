@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Checkerboard</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="header__nav">
+            <h1>Checkerboard</h1>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="flex-container">
+            
+            <div class="opening_message">
+                <h2>Welcome to Checkboard!</h2>
+                <h3>The default 8 x 8 checkerboard is rendered.<br>
+                    Design your own checkerboard by specifying your board size and colors!
+                </h3>
+                <ol>
+                    <li><strong>Route 1: /</strong> - 8 x 8 Standard</li>
+                    <li><strong>Route 2: /4</strong> - 4 x 8 Standard</li>
+                    <li><strong>Route 3: /x/y</strong> - Row x Column Custom Size</li>
+                    <li><strong>Route 4: /x/y/color_one/color_two</strong> - Custom Size and Color</li>
+                </ol>
+            </div>
+            
+            {% if message %}
+            <div class="error_message">
+                <h3>{{ message }}</h3>
+                <p><strong>Please see the README.md to see how the URL links are formatted for an accurate example.</strong></p>
+            </div>
+            
+            {% else %}
+            <table>
+                <tbody>
+                    {% for tile in range(0,row) %}
+                        <tr> {# primary tile is the lighter tile, and shows up first #}
+                            {% for light_tile in range(0,col) %}
+                                {% if (light_tile+tile) % 2 == 0 %}
+                                    <td style="background-color: {{color_primary}}"></td>
+                                {% else %}
+                                    <td style="background-color: {{color_secondary}}"></td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+            
+        </div>
+    </div>
+    
+    <script>
+        // Check if the content height is greater than the viewport height
+        if (document.body.scrollHeight > window.innerHeight) {
+            document.documentElement.style.setProperty('--html-height', 'fit-content');
+        } else {
+            document.documentElement.style.setProperty('--html-height', '100vh');
+        }
+    </script>
+</body>
+</html>
