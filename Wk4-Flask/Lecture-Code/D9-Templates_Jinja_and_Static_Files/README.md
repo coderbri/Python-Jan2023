@@ -10,11 +10,15 @@
     - Static Files
 
 ### Table of Contents
-1. Building a Flask Application
-2. About this Project
-3. Running the Flask Application
+1. [Initial Setup](#initial-setup)
+2. [Flask Web Application - Rendering with Jinja2](#flask-web-application---rendering-with-jinja2)
+3. [Application Structure](#application-structure)
+4. [Routes and Functions](#routes-and-functions)
+5. [Jinja2 Templates](#jinja2-templates)
+6. [Running the Application](#running-the-application)
 
 ---
+### Initial Setup
 
 <details>
 <summary>Building the Application</summary>
