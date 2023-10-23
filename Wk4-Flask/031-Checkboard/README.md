@@ -13,19 +13,15 @@ This Flask application allows you to generate custom checkerboards with differen
 
 #### 1. Default 8x8 Checkerboard
 
-<!-- <div align="center">
-<img src="#" width="450px" height="auto">
-</div> -->
-
 - Route: `/`
 - Description: Renders an 8x8 standard checkerboard with default colors.
 - Example URL: `http://localhost:5001/`
 
 #### 2. Custom Rows and Columns
 
-<!-- <div align="center">
-<img src="#" width="450px" height="auto">
-</div> -->
+<div align="center">
+<img src="./imgs/Route-2-Demo.gif" width="450px" height="auto">
+</div>
 
 - Route: `/<int:x>/<int:y>`
 - Description: Renders a custom-sized checkerboard with the specified number of rows and columns using default colors.
@@ -33,9 +29,12 @@ This Flask application allows you to generate custom checkerboards with differen
 
 #### 3. Custom Size and Colors
 
-<!-- <div align="center">
-<img src="#" width="450px" height="auto">
-</div> -->
+<div align="center">
+<img src="./imgs/Route-3-Demo.gif" width="450px" height="auto">
+</div>
+<div align="center">
+<img src="./imgs/Route-4-Demo.gif" width="450px" height="auto">
+</div>
 
 - Route: `/<int:x>/<int:y>/<color1>/<color2>`
 - Description: Renders a custom-sized checkerboard with the specified number of rows and columns using custom colors.
@@ -54,6 +53,10 @@ This Flask application allows you to generate custom checkerboards with differen
 
 3. If you enter an invalid route, you'll receive a message with instructions on the valid URL formats.
     - The application also provides a list of example URL formats for each route.
+<div align="center">
+<img src="./imgs/Route-Undefined-Demo.gif" width="450px" height="auto">
+</div>
+
 
 ### Running the Application
 
