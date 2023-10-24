@@ -36,8 +36,8 @@ Course Taken: ２０２３年０１月
     - [#029: Understanding Routing](Wk4-Flask/029-Understanding_Routing/)
     - [#030: Playground](Wk4-Flask/030-Playground/)
     - [#031: Checkerboard](Wk4-Flask/031-Checkboard/)
+    - [#032: HTML Table](Wk4-Flask/032-HTML_Table/)
     ---
-    - [#032: HTML Table](#)
     - [#033: Double-Charging Dojo Fruit Store](#)
     - [#034: Counter](#)
     - [#035: Great Number Game](#)
