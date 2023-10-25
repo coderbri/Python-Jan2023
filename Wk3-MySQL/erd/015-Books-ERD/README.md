@@ -55,4 +55,4 @@ In summary, the CASCADE option ensures that when a user or book is deleted, all 
 By following this database schema and its relationships, the web application can effectively manage books, users, and their favorite book selections.
 
 ---
-<p align="right">Completed: ２０２３年１０月１３日（金）</p>
+<p align="right">Completed: ２０２３年１０月２５日（水）</p>
