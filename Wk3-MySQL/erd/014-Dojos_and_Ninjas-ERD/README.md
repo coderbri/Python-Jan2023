@@ -16,5 +16,7 @@ The **dojos** table contains the columns of `id`, `name`, `created_at` and `upda
 <img src="./imgs/table-ninjas.jpg" width="450px" height="auto">
 </div>
 
+**Note:** When any relationship is present, the ON DELETE functionality must be set to **"CASCADE"** so that when the foreign key is deleted, the data linked from the may-to-one relationship is also terminated. See [this project](../015-Books-ERD/) for more details on this.
+
 ---
 <p align="right">Completed: ２０２３年１０月１３日（金）</p>
