@@ -1,4 +1,4 @@
-# Week 3: MySQL
+# Week 3: MySQL — ERDs & Queries
 
 ２０２３年１０月１２日　- ２０２３年１０月＿日
 
@@ -6,7 +6,15 @@
 
 ## Topics Covered
 
-### **MySQL: ERDs & Queries**
+- **[D6: MySQL ERDs and Relationships](Lecture-Code/D6-MySQL_ERDs_and_Relationships/)**
+    - Overview
+    - Database Design
+    - One to One
+    - One to Many
+    - Many to Many
+    - Normalization
+    - Conventions
+    - Data Types
 
 - **[D7: MySQL Queries](#)**
     - Connecting to MySQL
