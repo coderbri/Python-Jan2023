@@ -16,7 +16,7 @@
     - Conventions
     - Data Types
 
-- **[D7: MySQL Queries](#)**
+- **[D7: MySQL Queries](Lecture-Code/D7-Forward_Engineering_and_MySQL_Queries)**
     - Connecting to MySQL
     - Import
     - SELECT
