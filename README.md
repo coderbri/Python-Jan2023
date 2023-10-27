@@ -19,30 +19,30 @@ Course Taken: ２０２３年０１月
     - [#010: Basketball Dictionaries](Wk2-OOP/010-Basketball_Dictionaries/)
     ---
     - [#011: Modular Practice](#)
-    - [#012: Dojo Pets](#)
+    <!-- - [#012: Dojo Pets](#) -->
 
 - MySQL: ERD & Queries
     - [#013: Users ERD](Wk3-MySQL/erd/013-Users-ERD/)
     - [#014: Dojos & Ninjas ERD](Wk3-MySQL/erd/014-Dojos_and_Ninjas-ERD)
-    ---
     - [#015: Books ERD](Wk3-MySQL/erd/015-Books-ERD/)
+    ---
     - [#016: Event Planner ERD](#)
-    - [#017: Blogs ERD](#)
-    - [#018: User Dashboard](#)
-    - [#019: Normalization](#)
-    - [#020: Users Queries](#)
-    - [#021: ...](#)
+    <!-- - [#017: Blogs ERD](#) -->
+    <!-- - [#018: User Dashboard](#) -->
+    <!-- - [#019: Normalization](#) -->
+    <!-- - [#020: Users Queries](#) -->
+    <!-- - [#021: ...](#) -->
 
 - Flask Framework
     - [#029: Understanding Routing](Wk4-Flask/029-Understanding_Routing/)
     - [#030: Playground](Wk4-Flask/030-Playground/)
     - [#031: Checkerboard](Wk4-Flask/031-Checkboard/)
     - [#032: HTML Table](Wk4-Flask/032-HTML_Table/)
+    - [#034: Counter](Wk4-Flask/034-Counter/)
     ---
     - [#033: Double-Charging Dojo Fruit Store](#)
-    - [#034: Counter](#)
-    - [#035: Great Number Game](#)
-    - [#036: Dojo Survey](#)
-    - [#037: Ninja Gold](#)
+    <!-- - [#035: Great Number Game](#) -->
+    <!-- - [#036: Dojo Survey](#) -->
+    <!-- - [#037: Ninja Gold](#) -->
 
 <!-- - Flask + MySQL - Full-Stack -->
