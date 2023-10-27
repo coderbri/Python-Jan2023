@@ -1,6 +1,6 @@
 # Week 4: Python Flask
 
-２０２３年１０月０８日　- ２０２３年１０月＿日
+２０２３年１０月０８日　- ２０２３年１０月２７日
 
 ---
 
@@ -20,6 +20,10 @@
     - Template Engines
     - Static Files
 
-<!-- 
-- **[D10: SQL and ERD](#)**
-    - ... -->
+
+- **[D10: Forms, Redirect & Session](Lecture-Code/D10-Forms_Redirect_and_Session/)**
+    - POST Form Submission
+        - POST vs GET
+        - `request.form`
+    - Redirecting
+    - Session
