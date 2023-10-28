@@ -12,7 +12,7 @@
     <header>
         <div class="navbar navbar-dark bg-dark box-shadow">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
+                <a href="/" class="navbar-brand d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
                     <strong>Dojo Fruit Store</strong>
                 </a>
@@ -84,10 +84,33 @@
                                     </select>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>Blackberry</td>
+                                <td>
+                                    <select name='blackberry'>
+                                        <option value='0'>0</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                    </select>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     
                     <h4 class="mb-3" id='info'>Your Information</h4>
+                    
+                    {% with messages = get_flashed_messages()  %}
+                        {% if messages %}
+                        <div class="alert alert-danger">
+                            {% for message in messages %}
+                                <p>{{ message }}</p>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    {% endwith %}
+                    
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">First name</label>

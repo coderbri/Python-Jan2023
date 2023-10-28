@@ -11,7 +11,7 @@
     <header>
         <div class="navbar navbar-dark bg-dark box-shadow">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
+                <a href="/" class="navbar-brand d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
                     <strong>Dojo Fruit Store</strong>
                 </a>
@@ -26,7 +26,7 @@
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Thank you for your order!</h1>
-                <p class="lead text-muted">We ordered 5 items for you and charged your student account on March 23rd 2019 5:15:35 PM.</p>
+                <p class="lead text-muted">We ordered {{ session['total_fruit_count'] }} item(s) for you and charged your student account on {{ today.strftime('%B %d, %Y %I:%M:%S %p') }}.</p>
             </div>
         </section>
         
@@ -41,33 +41,29 @@
                         </tr>
                     </thead>
                     <tbody>
+                    {% for fruit, quantity in session['checkout_info'].items() if fruit not in ['first_name', 'last_name', 'student_id'] and quantity | int > 0 %}
                         <tr>
-                            <td>Strawberry</td>
-                            <td>4</td>
+                            <td>{{fruit}}</td>
+                            <td>{{ quantity }}</td>
                         </tr>
-                        <tr>
-                            <td>Raspberry</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Apple</td>
-                            <td>2</td>
-                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
+                
+                {# {{ session['checkout_info'] }} #}
                 
                 <h4 class="mb-3">Your Information</h4>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        First Name: Michael
+                        First Name: {{ session['checkout_info']['first_name'] }}
                     </div>
                     <div class="col-md-6 mb-3">
-                        Last Name: Choi
+                        Last Name: {{ session['checkout_info']['last_name'] }}
                     </div>
                 </div>
                 
                 <div class="mb-3">
-                    Your Student ID: 123-456-7890
+                    Your Student ID: {{ session['checkout_info']['student_id'] }}
                 </div>
                 
                 <hr class="mb-4">
