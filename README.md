@@ -38,9 +38,9 @@ Course Taken: ２０２３年０１月
     - [#030: Playground](Wk4-Flask/030-Playground/)
     - [#031: Checkerboard](Wk4-Flask/031-Checkboard/)
     - [#032: HTML Table](Wk4-Flask/032-HTML_Table/)
+    - [#033: Double-Charging Dojo Fruit Store](Wk4-Flask/033-Dojo-Fruit-Store/)
     - [#034: Counter](Wk4-Flask/034-Counter/)
     ---
-    - [#033: Double-Charging Dojo Fruit Store](Wk4-Flask/033-Dojo-Fruit-Store/)
     <!-- - [#035: Great Number Game](#) -->
     <!-- - [#036: Dojo Survey](#) -->
     <!-- - [#037: Ninja Gold](#) -->
