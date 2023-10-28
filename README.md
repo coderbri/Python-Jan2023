@@ -17,8 +17,8 @@ Course Taken: ２０２３年０１月
     - [#008: Bank Account](Wk2-OOP/008-BankAccount/)
     - [#009: Users & Bank Accounts](Wk2-OOP/009-Users_with_BankAccounts/)
     - [#010: Basketball Dictionaries](Wk2-OOP/010-Basketball_Dictionaries/)
+    - [#011: Modular Practice](Wk2-OOP/011-Modular_Practice/)
     ---
-    - [#011: Modular Practice](#)
     <!-- - [#012: Dojo Pets](#) -->
 
 - MySQL: ERD & Queries
