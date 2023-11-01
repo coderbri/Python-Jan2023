@@ -43,6 +43,10 @@ The server logic is implemented in `server.py`. It handles the following routes 
 
 ### 2. `/checkout`
 
+<div align="center">
+<img src="./imgs/dojo_fruit_store-demo.gif" width="450px" height="auto">
+</div>
+
 - Route: `@app.route('/checkout', methods=['POST'])`
 - Description: Handles the submission of user orders. It performs the following tasks:
   - Validates user data, ensuring the provision of first name and last name.
@@ -53,6 +57,10 @@ The server logic is implemented in `server.py`. It handles the following routes 
   - Renders the `checkout.html` template with order details.
 
 ### 3. `/fruits`
+
+<div align="center">
+<img src="./imgs/fruits_page.gif" width="450px" height="auto">
+</div>
 
 - Route: `@app.route('/fruits')`
 - Description: Displays a placeholder page (`fruits.html`) that lists available fruits for ordering.
