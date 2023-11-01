@@ -13,9 +13,9 @@ This is a simple Flask web application that demonstrates how to use sessions to 
 
 #### 1. Root Route
 
-<!-- <div align="center">
-<img src="" width="450px" height="auto">
-</div> -->
+<div align="center">
+<img src="./imgs/counter-full_demo.gif" width="450px" height="auto">
+</div>
 
 - Route: `/`
 - Description: Renders the number of times the client has visited the site and the current value of the counter. The counter is incremented each time the user visits the page. Refreshing the page will also increment the counter.
@@ -23,10 +23,18 @@ This is a simple Flask web application that demonstrates how to use sessions to 
 
 #### 2. Increment by Two
 
+<div align="center">
+<img src="./imgs/counter-increment_by_2-demo.gif" width="450px" height="auto">
+</div>
+
 - Route: `/increment_by_two`
 - Description: Clicking the "Add 2" button will increase the counter by 2. After incrementing, it redirects back to the home route.
 
 #### 3. Custom Increment
+
+<div align="center">
+<img src="./imgs/counter-increment_custom-demo.gif" width="450px" height="auto">
+</div>
 
 - Route: `/increment_custom`
 - Description: Renders a form that allows the user to specify the increment value for the counter. Users can input their desired increment value and click the "Increment" button. The counter will be incremented by the specified value.
