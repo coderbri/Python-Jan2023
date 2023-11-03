@@ -1,6 +1,6 @@
 # Books ERD
 
-The **Books Schema** contains an ERD model to represent the database for an application that tracks users, books, and the favorite books that each user recommends. The model below demonstrates the **Many-to-Many** relationship to represent an application that tracks dojos, as well as the ninjas that belong to each dojo location.
+The **Books Schema** contains an ERD model to represent the database for an application that tracks users, books, and the favorite books that each user recommends. The model below demonstrates the **Many-to-Many** relationship to represent the application
 
 <div align="center">
 <img src="./imgs/ERD-Model-Books.png" width="450px" height="auto">
