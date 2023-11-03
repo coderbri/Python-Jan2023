@@ -25,10 +25,10 @@ Course Taken: ２０２３年０１月
     - [#013: Users ERD](Wk3-MySQL/erd/013-Users-ERD/)
     - [#014: Dojos & Ninjas ERD](Wk3-MySQL/erd/014-Dojos_and_Ninjas-ERD)
     - [#015: Books ERD](Wk3-MySQL/erd/015-Books-ERD/)
-    - [#016: Friendships ERD](#)
     - [#017: Event Planner ERD](Wk3-MySQL/erd/017-Event_Planner-ERD/)
     ---
-    <!-- - [#017: Blogs ERD](#) -->
+    - [#016: Friendships ERD](#)
+    - [#017: Blogs ERD](#)
     <!-- - [#018: User Dashboard](#) -->
     <!-- - [#019: Normalization](#) -->
     <!-- - [#020: Users Queries](#) -->
@@ -42,7 +42,7 @@ Course Taken: ２０２３年０１月
     - [#033: Double-Charging Dojo Fruit Store](Wk4-Flask/033-Dojo-Fruit-Store/)
     - [#034: Counter](Wk4-Flask/034-Counter/)
     ---
-    - [#035: Great Number Game](#)
+    - [#035: Great Number Game](Wk4-Flask/035-Great_Number_Game/)
     - [#036: Dojo Survey](#)
     <!-- - [#037: Ninja Gold](#) -->
 
