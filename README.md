@@ -19,7 +19,7 @@ Course Taken: ２０２３年０１月
     - [#010: Basketball Dictionaries](Wk2-OOP/010-Basketball_Dictionaries/)
     - [#011: Modular Practice](Wk2-OOP/011-Modular_Practice/)
     ---
-    <!-- - [#012: Dojo Pets](#) -->
+    - [#012: Dojo Pets](#)
 
 - **MySQL: ERD & Queries**
     - [#013: Users ERD](Wk3-MySQL/erd/013-Users-ERD/)
@@ -28,7 +28,7 @@ Course Taken: ２０２３年０１月
     - [#017: Event Planner ERD](Wk3-MySQL/erd/017-Event_Planner-ERD/)
     ---
     - [#016: Friendships ERD](#)
-    - [#017: Blogs ERD](#)
+    - [#018: Blogs ERD](#)
     <!-- - [#018: User Dashboard](#) -->
     <!-- - [#019: Normalization](#) -->
     <!-- - [#020: Users Queries](#) -->
@@ -41,8 +41,8 @@ Course Taken: ２０２３年０１月
     - [#032: HTML Table](Wk4-Flask/032-HTML_Table/)
     - [#033: Double-Charging Dojo Fruit Store](Wk4-Flask/033-Dojo-Fruit-Store/)
     - [#034: Counter](Wk4-Flask/034-Counter/)
-    ---
     - [#035: Great Number Game](Wk4-Flask/035-Great_Number_Game/)
+    ---
     - [#036: Dojo Survey](#)
     <!-- - [#037: Ninja Gold](#) -->
 

@@ -63,4 +63,3 @@ The **Great Number Game** is powered by Flask, a web framework. It utilizes sess
 
 ---
 <p align="right">Completed: ２０２３年１１月０３日（金）</p>
-
