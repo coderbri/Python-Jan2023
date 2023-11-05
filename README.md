@@ -19,7 +19,7 @@ Course Taken: ２０２３年０１月
     - [#010: Basketball Dictionaries](Wk2-OOP/010-Basketball_Dictionaries/)
     - [#011: Modular Practice](Wk2-OOP/011-Modular_Practice/)
     ---
-    - [#012: Dojo Pets](#)
+    - [#012: Dojo Pets](Wk2-OOP/012-Dojo_Pets/)
 
 - **MySQL: ERD & Queries**
     - [#013: Users ERD](Wk3-MySQL/erd/013-Users-ERD/)
