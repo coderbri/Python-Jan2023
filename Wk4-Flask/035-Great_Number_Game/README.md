@@ -13,18 +13,23 @@
     - [How is session used for this project?](#how-is-session-used-for-this-project)
 3. [**Templates**](#templates)
 
+
 ## Routes and Their Functions
 
-<!-- <div align="center">
-<img src="./imgs" width="450px" height="auto">
-</div> -->
-
 #### 1. Root Route
+
+<div align="center">
+<img src="./imgs/game_index-page.png" width="450px" height="auto">
+</div>
 
 - Route: `/`
 - Description: Displays the main game page. Generates a random number for users to guess. Tracks the number of attempts and handles redirection to the success or game over pages.
 
 #### 2. Submit Guess (`POST`)
+
+<div align="center">
+<img src="./imgs/Great_Number_Game-Success.gif" width="450px" height="auto">
+</div>
 
 - Route: `/submit_guess`
 - Description: Handles user guesses, limiting them to a maximum of 5 attempts. Tracks the guess count, redirects for correct guesses, or provides feedback for incorrect ones.
@@ -35,6 +40,10 @@
 - Description: Allows users to reset the game by clearing session data, and redirects to the main game page for a new game.
 
 #### 4. Game Over
+
+<div align="center">
+<img src="./imgs/Great_Number_Game-Game_Over.gif" width="450px" height="auto">
+</div>
 
 - Route: `/game_over`
 - Description: Displays a "You Lose" message for users exceeding the maximum attempts. Provides a "Try Again" button to start a new game.

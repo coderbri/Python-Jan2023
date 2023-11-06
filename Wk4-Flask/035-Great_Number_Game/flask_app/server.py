@@ -19,6 +19,11 @@ def index():
 
 @app.route('/submit_guess', methods=['POST'])
 def submit_guess():
+    # ? Validating Input
+    user_guess = request.form['guess'].strip()
+    if not user_guess:
+        error_message = "Please enter a valid guess."
+        return render_template('index.html', error=error_message)
     
     # ? Limit to only 5 attempts
     if session['guess_count'] >= 5:
