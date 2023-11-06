@@ -1,0 +1,40 @@
+Mon, Nov 6, 2023
+- adjusted Pet eat() method so that the program can take into account the pet's energy and health limit and not exceed the maximum.
+- Previously:
+    ```py
+    # Pet Class
+    def eat(self):
+        self.energy += 5
+        self.health += 10
+        return self
+    
+    # Ninja Class
+    def feed( self ):
+        if len( self.pet_food ) > 0:
+            food = self.pet_food.pop()
+            print(f'You are feeding {self.pet.name} {food}.')
+            self.pet.eat()
+            print('')
+        else: print("Oh no! You need more pet food!")
+        return self
+    ```
+- adjusted Pet sleep() method so that the pet doesn't exceed energy if no rest is needed.
+- Previously:
+    ```py
+    def sleep(self):
+        self.energy += 25
+        print(f'{self.name} is sleeping (.zzZ Gained 25 energy).')
+        return self
+    ```
+- adjusted Pet play() method so that the pet doesn't exceed energy cost if there's insufficient energy.
+- Previously:
+    ```py
+    def play( self ):
+        if self.energy >= 25:
+            self.health += 5
+            self.energy -= 25
+            print(f'(=^x^=) {self.name} played! {self.name} just gained 5 health.')
+        else:
+            print(f"!!! {self.name} is too tired/weak to play right now. Try feeding or letting {self.name} sleep.")
+        return self
+    ```
