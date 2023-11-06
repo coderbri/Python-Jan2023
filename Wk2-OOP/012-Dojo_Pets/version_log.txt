@@ -1,4 +1,4 @@
-Mon, Nov 6, 2023
+Mon, Nov 6, 2023 - Ver 1.1
 - adjusted Pet eat() method so that the program can take into account the pet's energy and health limit and not exceed the maximum.
 - Previously:
     ```py
@@ -38,3 +38,6 @@ Mon, Nov 6, 2023
             print(f"!!! {self.name} is too tired/weak to play right now. Try feeding or letting {self.name} sleep.")
         return self
     ```
+
+Mon, Nov 6, 2023 - Ver 1.2
+- Modularised dojo_pets.py with their own class files, Pet.py and Ninja.py, along with main.py for testing.
