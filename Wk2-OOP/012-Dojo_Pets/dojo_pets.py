@@ -94,7 +94,3 @@ jane_doe.feed().display_pet_status()
 jane_doe.play_with_pet().display_pet_status().play_with_pet().display_pet_status().play_with_pet().display_pet_status()
 neko_chan.sleep()
 jane_doe.display_pet_status().bathe()
-
-
-# TODO: NINJA BONUS: Use modules to separate out the classes into different files. (U•x•U)
-# TODO: SENSEI BONUS: Use Inheritance to create sub classes of pets.
