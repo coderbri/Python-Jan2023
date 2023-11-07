@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="bg-light rounded p-3 mt-3 col-11 col-md-8 col-lg-6 mx-auto">
+    
+    <h2 class="fs-3 text-decoration-underline mb-3">Submitted Info</h2>
+    
+    <p><strong>Name:</strong> {{ user_result['name'] }}</p>
+    <p><strong>Dojo Location:</strong> {{ user_result['location'] }}</p>
+    <p><strong>Favorite Language:</strong> {{ user_result['language'] }}</p>
+    {% if user_result['comments'] %}
+        <p><strong>Comments:</strong> {{ user_result['comments'] }}</p>
+    {% else %}
+        <p><strong>Comments:</strong> N/A</p>
+    {% endif %}
+    
+</div>
+
+{% endblock %}
