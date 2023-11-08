@@ -1,6 +1,6 @@
 # Dojo Survey
 
-The "Dojo Survey" is a simple Flask web application that allows users to submit a survey form with their name, preferred Dojo location, favorite programming language, and optional comments. This README provides an overview of the project's structure and functionality.
+The **Dojo Survey** is a simple Flask web application that allows users to submit a survey form with their name, preferred Dojo location, favorite programming language, and optional comments. This README provides an overview of the project's structure and functionality.
 
 ### Table of Contents
 1. [Project Structure](#project-structure)
@@ -28,7 +28,7 @@ The "Dojo Survey" is a simple Flask web application that allows users to submit 
 #### 1. Root Route
 
 <div align="center">
-<img src="./imgs/form-page.png" width="450px" height="auto">
+<img src="./imgs/Dojo_Survey-Form.png" width="450px" height="auto">
 </div>
 
 - **Route**: `/`
@@ -44,7 +44,7 @@ The "Dojo Survey" is a simple Flask web application that allows users to submit 
 #### 3. Results Page
 
 <div align="center">
-<img src="./imgs/results-page.png" width="450px" height="auto">
+<img src="./imgs/Dojo_Survey-Results.png" width="450px" height="auto">
 </div>
 
 - **Route**: `/results`
@@ -54,32 +54,34 @@ The "Dojo Survey" is a simple Flask web application that allows users to submit 
 
 ## Session Usage
 
-In this project, the `session` object provided by Flask is used to store and pass data between routes and templates. The `session` allows us to maintain user-specific data across multiple requests. In particular, it's used to store the form data and pass it to the `results.html` template.
+In this project, the **`session`** object provided by Flask is used to store and pass data between routes and templates. The **`session`** allows us to maintain user-specific data across multiple requests. In particular, it's used to store the form data and pass it to the **`results.html`** template.
 
-The `submit_form` route stores the form data in the session like this:
+The **`submit_form`** route stores the form data in the session like this:
 
 ```python
 form_data = {
     'name': request.form.get('name'),
     'location': request.form.get('location'),
-    'language': request.form.get('language'),
+    'fav_language': request.form.get('fav_language'),
+    'experience': request.form.get('experience'),
+    'spoken_languages': request.form.getlist('spoken_languages'), # New addition
     'comments': request.form.get('comments')
 }
 session['form_data'] = form_data
 ```
 
-The `results` route retrieves the form data from the session and passes it to the `results.html` template:
-
+The **`results`** route retrieves the form data from the session and passes it to the results.html template:
 ```python
 form_data = session.get('form_data', {})
 return render_template('results.html', user_result=form_data)
 ```
 
-## Form Setup in Flask
 
-Forms in Flask are set up using HTML, and naming the labels and input fields is crucial for the server-side processing in `server.py`. Here's how it all comes together:
+### Form Setup in Flask
 
-1. **HTML Form Structure**: In your HTML template (e.g., `index.html`), you define the structure of the form using the `<form>` element. Inside the form, you include input fields for collecting user data. Each input field is associated with a label and is given a unique `name` attribute. For example:
+In the **Dojo Survey** Flask application, forms are set up using HTML. The naming of labels and input fields plays a crucial role in the server-side processing in `server.py`. Here's an overview of how it works:
+
+1. **HTML Form Structure**: In the HTML template (e.g., `index.html`), the structure of the form is defined using the `<form>` element. Inside the form, there are input fields for collecting user data. Each input field is associated with a label and has a unique `name` attribute. For example:
 
     ```html
     <div class="mb-3">
@@ -90,9 +92,9 @@ Forms in Flask are set up using HTML, and naming the labels and input fields is 
 
     In this code snippet, the `<label>` is associated with the `<input>` field using the `for` attribute, and the `name` attribute is specified for the `<input>` field.
 
-2. **HTTP POST Request**: When the user submits the form by clicking the "Submit" button, the browser sends an HTTP POST request to the server, including the data entered into the form fields. The `name` attribute of each input field serves as the key for the submitted data.
+2. **HTTP POST Request**: When a user submits the form by clicking the "Submit" button, the browser sends an HTTP POST request to the server, including the data entered into the form fields. The `name` attribute of each input field serves as the key for the submitted data.
 
-3. **`request.form` in `server.py**: In your Flask application's `server.py`, you handle the form submission in the `/submit` route. You use `request.form` to access the data submitted in the POST request. The `request.form` object allows you to retrieve the form data by specifying the `name` attribute of each input field as the key. For example:
+3. **Data Retrieval in `server.py`**: In the Flask application's `server.py`, the form submission is handled in the `/submit` route. The `request.form` object is used to access the data submitted in the POST request. Data retrieval is accomplished by specifying the `name` attribute of each input field as the key. For example:
 
     ```python
     name = request.form.get('name')
@@ -100,11 +102,11 @@ Forms in Flask are set up using HTML, and naming the labels and input fields is 
 
     Here, `name` is assigned the value that the user entered into the "name" field, as specified by the `name` attribute.
 
-4. **Validation and Processing**: With the form data available in `server.py`, you can perform validation, processing, and storage of the data as needed. For example, you can check if the fields are empty, create a dictionary to store the data, and store it in the session for future use.
+4. **Validation and Processing**: With the form data available in `server.py`, validations can be performed, data can be processed, and the data can be stored as needed. For instance, a dictionary can be created to store the data, and it can be stored in the session for future use.
 
-5. **Feedback and Redirection**: Based on the form data and any validation results, you can provide feedback to the user, such as displaying an error message or redirecting them to another page, like `/results`.
+5. **Feedback and Redirection**: Based on the form data and any validation results, feedback can be provided to the user. This can include displaying an error message if required fields are empty or redirecting the user to another page, such as `/results`.
 
-By naming the labels and input fields and associating them with unique `name` attributes, you establish a direct link between the HTML form and your server-side code. This naming convention allows you to retrieve, process, and validate the form data effectively in `server.py`, making it a fundamental part of your web application's functionality.
+By naming the labels and input fields and associating them with unique `name` attributes, a direct link is established between the HTML form and the server-side code. This naming convention allows for effective retrieval, processing, and validation of the form data in `server.py`, making it a fundamental part of the web application's functionality.
 
 **NOTES:**
 - To see how this Flask application was initially set up, [check this project](https://github.com/coderbri/Python-Jan2023/blob/main/Wk4-Flask/Lecture-Code/D9-Templates_Jinja_and_Static_Files/README.md#initial-setup).

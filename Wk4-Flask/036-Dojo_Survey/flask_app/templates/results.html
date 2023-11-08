@@ -8,7 +8,16 @@
     
     <p><strong>Name:</strong> {{ user_result['name'] }}</p>
     <p><strong>Dojo Location:</strong> {{ user_result['location'] }}</p>
-    <p><strong>Favorite Language:</strong> {{ user_result['language'] }}</p>
+    <p><strong>Favourite Language:</strong> {{ user_result['fav_language'] }}</p>
+    <p><strong>Coding Experience:</strong> {{ user_result['experience'] }}</p>
+    
+    <p><strong>Spoken Languages:</strong></p>
+    <ul>
+        {% for language in user_result['spoken_languages'] %}
+        <li>{{ language }}</li>
+        {% endfor %}
+    </ul>
+    
     {% if user_result['comments'] %}
         <p><strong>Comments:</strong> {{ user_result['comments'] }}</p>
     {% else %}
