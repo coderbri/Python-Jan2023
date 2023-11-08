@@ -26,10 +26,10 @@ Course Taken: ２０２３年０１月
     - [#015: Books ERD](Wk3-MySQL/erd/015-Books-ERD/)
     - [#016: Friendships ERD](Wk3-MySQL/erd/016-Friendships-ERD/)
     - [#017: Event Planner ERD](Wk3-MySQL/erd/017-Event_Planner-ERD/)
+    - [#018: Blogs ERD](Wk3-MySQL/erd/018-Blogs-ERD/)
     ---
-    - [#018: Blogs ERD](#)
-    <!-- - [#018: User Dashboard](#) -->
-    <!-- - [#019: Normalization](#) -->
+    - [#018: User Dashboard](#)
+    - [#019: Normalization](#)
     <!-- - [#020: Users Queries](#) -->
     <!-- - [#021: ...](#) -->
 
