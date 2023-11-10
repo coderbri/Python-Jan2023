@@ -27,10 +27,10 @@ Course Taken: ２０２３年０１月
     - [#016: Friendships ERD](Wk3-MySQL/erd/016-Friendships-ERD/)
     - [#017: Event Planner ERD](Wk3-MySQL/erd/017-Event_Planner-ERD/)
     - [#018: Blogs ERD](Wk3-MySQL/erd/018-Blogs-ERD/)
+    - [#019: User Dashboard ERD](Wk3-MySQL/erd/019-User_Dashboard/)
     ---
-    - [#018: User Dashboard](#)
-    - [#019: Normalization](#)
-    <!-- - [#020: Users Queries](#) -->
+    - [#020: Normalization ERD](#)
+    - [#021: Users Queries](#)
     <!-- - [#021: ...](#) -->
 
 - **Flask Framework**
