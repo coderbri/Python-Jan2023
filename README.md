@@ -30,7 +30,7 @@ Course Taken: ２０２３年０１月
     - [#019: User Dashboard ERD](Wk3-MySQL/erd/019-User_Dashboard/)
     ---
     - [#020: Normalization ERD](#)
-    - [#021: Users Queries](#)
+    <!-- - [#021: Users Queries](#) -->
     <!-- - [#021: ...](#) -->
 
 - **Flask Framework**
@@ -43,7 +43,7 @@ Course Taken: ２０２３年０１月
     - [#035: Great Number Game](Wk4-Flask/035-Great_Number_Game/)
     - [#036: Dojo Survey](Wk4-Flask/036-Dojo_Survey/)
     ---
-    - [#037: Ninja Gold](#)
+    <!-- - [#037: Ninja Gold](#) -->
 
 - **Flask + MySQL - Full-Stack** 
     - [#038: Users CR](#)
