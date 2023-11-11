@@ -28,8 +28,8 @@ Course Taken: ２０２３年０１月
     - [#017: Event Planner ERD](Wk3-MySQL/erd/017-Event_Planner-ERD/)
     - [#018: Blogs ERD](Wk3-MySQL/erd/018-Blogs-ERD/)
     - [#019: User Dashboard ERD](Wk3-MySQL/erd/019-User_Dashboard/)
-    ---
-    - [#020: Normalization ERD](#)
+    - [#020: Normalization ERD](Wk3-MySQL/erd/020-Normalization-ERD/)
+    
     <!-- - [#021: Users Queries](#) -->
     <!-- - [#021: ...](#) -->
 
